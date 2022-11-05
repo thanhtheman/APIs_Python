@@ -1,6 +1,33 @@
 #--------------------------------------------------------------------------------------------------------------------------
 #Postgres routes - before user registration table, all routes are in the main.py file, we will delete and move all of these codes into the router folder
 
+# import psycopg2
+# from psycopg2.extras import RealDictCursor
+
+#At 3:55, we remove the below model to create a real postgre database
+# class Post(BaseModel):
+#     title: str
+#     content: str
+#     published: bool = True
+#     rating: Optional[int] = None
+#     id: Optional[int]
+
+# this is for Postgres, we moved this into a separate file schema.py at 5:33
+# class Post(BaseModel):
+#     title: str
+#     content: str
+#     published: bool = True
+
+#realdictcursor is to make sure we have all the column names on our ouput. This is how we connect to our Postgres database
+# try:
+#     conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres', password='OhYeah123', cursor_factory=RealDictCursor)
+#     cursor = conn.cursor()
+#     print('Database Connected!')
+# except Exception as error:
+#     print('Connecting to Database Failed!')
+#     print(error)
+
+
 # @app.get('/')
 # async def get():
 #     return {'message': 'Hello World'}
