@@ -1,5 +1,5 @@
 #--------------------------------------------------------------------------------------------------------------------------
-#Postgres routes - before user registration table
+#Postgres routes - before user registration table, all routes are in the main.py file, we will delete and move all of these codes into the router folder
 
 # @app.get('/')
 # async def get():

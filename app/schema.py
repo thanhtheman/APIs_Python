@@ -27,4 +27,12 @@ class Post(PostBase):
 #EmailStr library will do the validation
 class UserCreate(BaseModel):
     email: EmailStr
-    password: EmailStr
+    password: str
+
+# this is what we will send back to user after they send us their information
+class UserOut(BaseModel):
+    id: int
+    email: EmailStr
+    created_at: datetime
+    class Config:
+        orm_mode = True
